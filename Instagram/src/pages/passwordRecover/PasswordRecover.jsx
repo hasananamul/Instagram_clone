@@ -80,7 +80,7 @@ const PasswordRecover = () => {
                       setBtn("dissable")
                     }else{
                       console.log(token);
-                      await axios.post(`http://localhost:5050/user/recoveryPassword`,{
+                      await axios.post(`/user/recoveryPassword`,{
                         token : token,
                         confirmpassword 
                       })
