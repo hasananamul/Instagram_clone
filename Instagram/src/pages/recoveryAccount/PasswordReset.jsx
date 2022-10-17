@@ -75,7 +75,7 @@ const PasswordReset = () => {
     <>
       <Header />
 
-      <div className="login_container">
+      <div className="login_container recovery_container">
         
          <div className="login_row">
              <div className="login_colm">
