@@ -44,7 +44,7 @@ const UserNotLogin = () => {
       if (!login.auth || !login.password ) {
         tosterError("All field are required !")
       } else {
-        await axios.post("http://localhost:5050/user/no-login",{email : login.auth, password : login.password})
+        await axios.post("/user/no-login",{email : login.auth, password : login.password})
         .then(res => {
           if(res.data.user.isVerify){
             cookie.set("token", res.data.token)
