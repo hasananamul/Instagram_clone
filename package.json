@@ -1,6 +1,9 @@
 {
   "name": "startup_server_setup",
   "version": "1.0.0",
+  "engines": {
+   "node": "16.7.0"
+   },
   "description": "",
   "main": "server.js",
   "type": "module",
