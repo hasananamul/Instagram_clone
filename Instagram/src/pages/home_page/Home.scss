@@ -1,0 +1,294 @@
+.home_container{
+     width: 789px; 
+     margin: auto;
+     .home_row{
+      display: flex;
+      gap: 20px;
+      .home_timeline_col{
+            flex: 1 0 470px;
+            overflow: hidden;
+            margin: 30px 0 0px 0;
+            .history_box{
+                  margin: 0px 0 20px 0;
+                  padding: 10px 0;
+                  border: 1px solid #e9e9e9;
+                  border-radius: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  overflow: hidden;
+                  background-color: #fff;
+                  .history{
+                        overflow: hidden;
+                        padding: 10px;
+                        text-align: center;
+                        .history_img{
+                              img{
+                                    border-radius: 50%;
+                                    width: 60px;
+                                    height: 60px;
+                                    border: 1px solid #FF653B;
+                                    padding: 3px;
+                              }
+                        }
+                        .histiry_name{
+                              overflow: hidden;
+                              height: 13px;
+                              text-overflow: ellipsis;
+                              margin-top: 5px;
+                              h5{
+                                    font-size: 12px;
+                                    
+                              }
+                        }                        
+                  }
+            }
+            .post_box{
+                  border: 1px solid #e9e9e9;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  background-color: #fff;
+                  .post_profile{
+                        .profile_topline{
+                              display: flex;
+                              justify-content: space-between;
+                              padding: 15px;
+                              .topline_image{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    cursor: pointer;
+                                    .topline_image_name{
+                                          span{
+                                                a{
+                                                      font-size: 14px;
+                                                      font-weight: 600;
+                                                      color: rgb(38, 38, 38);
+                                                }
+                                          }
+                                    }
+                                    img{
+                                          width: 32px;
+                                          height: 32px;
+                                          border-radius: 50%;
+                                          cursor: pointer;
+                                    }
+                              }
+                              .option_button{
+                                    .option_icons{
+                                          font-size: 19px;
+                                          font-weight: 800;
+                                          cursor: pointer;
+                                    }
+                              }
+                        }
+                        .timeline_bottom{
+                                    .timeline_reaction_box{
+                                          padding: 0 10px;
+                                          margin: 10px 0;
+                                          display: flex;
+                                          justify-content: space-between;
+                                          .reaction_button{
+                                                display: flex;
+                                                gap: 10px;
+                                                svg{
+                                                      cursor: pointer;
+                                                      &:hover{
+                                                            fill: #8E8E8E!important;
+                                                            color: #8E8E8E!important;
+                                                      }
+                                                }
+                                          }
+                                          .save_button{
+                                                svg{
+                                                      cursor: pointer;
+                                                      &:hover{
+                                                            fill: #8E8E8E!important;
+                                                            color: #8E8E8E!important;
+                                                      }
+                                                }                                           
+                                          }
+                                    }
+                                    .liked_people_box{
+                                          padding: 15px;
+                                          display: flex;
+                                          .liked_person_img{
+                                                img{
+                                                      width: 20px;
+                                                      height: 20px;
+                                                      border-radius: 50%;
+                                                      margin-right: 5px;
+                                                }
+                                          }
+                                    //       .more_liked_persons{
+                                                
+                                    //       }
+                                    }
+
+                                    p,strong{
+                                          color: rgb(38, 38, 38);
+                                          font-size: 14px;
+                                          }
+                                    .timeline_post_text_box{
+                                          padding:0 15px;
+                                          p{
+                                                margin-bottom: 10px;
+                                          }
+                                    }
+                                    .comments_read_button_box{
+                                          padding:0 15px;
+                                          span{
+                                                font-size: 14px;
+                                                color: rgb(142, 142, 142);
+                                                font-weight: 400;
+                                          }
+                                    }
+                                    .post_time{
+                                          padding: 0 15px;
+                                          span{
+                                                font-size: 10px;
+                                                color: rgb(142, 142, 142);
+                                                font-weight: 400;
+                                          }
+                                    }
+                                    .comments_write_box {margin-top: 20px;
+                                          padding: 15px;
+                                          display: flex;
+                                          justify-content: space-between;
+                                          align-items: center;
+                                          border-top:1px solid rgb(239, 239, 239);
+                                          .text_area{
+                                                .comments_write_icon{
+                                                      svg{
+                                                            cursor: pointer;
+                                                      }
+                                                }
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 7px;
+                                          }
+                                          textarea{
+                                                outline: 0;
+                                                border: 0;
+                                                overflow-y: hidden;
+                                                resize: none;
+                                          }
+                                          .comments_post_button{
+                                                a{
+                                                color: #a6dbff;
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                                }
+                                          }
+                                    }
+                              }
+
+                  }
+            }
+      }
+      .home_profile_col{
+            flex: 1 0 319px;
+            overflow: hidden;
+            margin: 30px 0 0px 0;
+            .log_out {
+                  margin: 0 0 0 52px;
+                  }
+            .profile_box{
+                  padding: 15px 10px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .profile_detls{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        .profile_img{
+                              img{
+                                    width: 56px;
+                                    height: 56px;
+                                    border-radius: 50%;
+                              }
+                        }
+                        .profile_title{
+                              .profile_id{
+                                    margin: -7px 0;
+                                    a{
+                                          color: rgb(38, 38, 38);
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                    }
+                              }
+                              .profile_name{
+                                    a{
+                                          color: rgb(142, 142, 142)!important;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                    }
+                              }
+                        }
+                  }
+                  .account_switch_button{
+                        a{
+                              color: rgb(0, 149, 246);
+                              font-weight: 600;
+                              font-size: 14px;
+                        }
+                  }
+            }
+            .suggestion_box{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 0 10px;
+                  a{
+                        color: rgb(142, 142, 142);
+                        font-size: 14px;
+                        font-weight: 700;
+                  }
+            }
+            .sugestion_name_box{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 15px 10px;
+                  
+                  .suggestion_info{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: flex-start;
+                        
+                        .sugestion_img{
+                              img{
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                              }
+                        }
+                        .sugestion_title{
+                              .sugestion_name{
+                                    margin: -7px 0;
+                                    a{
+                                          color: rgb(38, 38, 38);
+                                          font-weight: 700;
+                                          font-size: 14px;
+                                    }      
+                              }
+                              .followed_by{
+                                    span{
+                                          color: rgb(142, 142, 142);
+                                          font-size: 12px;
+                                          font-weight: 400;
+                                    }      
+                              }
+                        }
+                  }
+                  .right_button{
+                        color: rgb(0, 149, 246);
+                        font-weight: 600;
+                        font-size: 14px;
+                  }
+            }
+      }
+     }
+}
