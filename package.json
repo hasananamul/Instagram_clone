@@ -8,11 +8,10 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Instagram",
+    "start": "node api/server.js",
     "server": "nodemon api/server.js",
     "social": "npm run --prefix Instagram start",
-    "runapps": "concurrently \"yarn server\" \"yarn social\"",
-    "start": "node api/server.js"
+    "runapps": "concurrently \"yarn server\" \"yarn social\""
   },
   "author": "",
   "license": "ISC",
