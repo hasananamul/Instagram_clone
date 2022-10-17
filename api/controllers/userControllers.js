@@ -128,7 +128,7 @@ export const registerUser = async (req, res, next) => {
             //Create json web token load token function
             const token = createToken({id : user._id}, "1m")
             await VerifyUser.create({verifyId : user._id, token})
-            const verify_link = `http://localhost:3000/user/${user._id}/AccountVerify/${token}`
+            const verify_link = `https://instacloneapps.herokuapp.com/user/${user._id}/AccountVerify/${token}`
             await sendEmail(user.email, "Testing Verification link", `Hi ${user.name} please click the linkn to verify your account ! ${verify_link}`)
             // sendSMS()
             res.status(200).send("User data created successfully" + json(user))
@@ -246,7 +246,7 @@ export const recoveryAccount = async (req, res, next) => {
             }
             if(valid_user){
                   const recovery_token = createToken({ id : valid_user._id})
-                  const verify_link = `http://localhost:3000/password_recovery/${recovery_token}`
+                  const verify_link = `https://instacloneapps.herokuapp.com/password_recovery/${recovery_token}`
                   sendEmail(valid_user.email, "Password recovery link" , verify_link )
                   res.status(200).send("Recovery link sent successfully")
             }
