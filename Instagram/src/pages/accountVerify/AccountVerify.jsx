@@ -8,7 +8,7 @@ const AccountVerify = () => {
   const param = useParams()
   const navigate = useNavigate()
   useEffect(() => {
-    axios.post("http://localhost:5050/user/accountVerify",param)
+    axios.post("/user/accountVerify",param)
   .then(res => {
     swal("Success",`Account verification successful `,"success",{buttons: "Close"})
     navigate("/login")
